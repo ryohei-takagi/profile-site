@@ -1,0 +1,6 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": "{\"name\": \"Taro\", \"mail\": \"mail@ryohei-takagi.me\", \"body\": \"Test\"}"
+}
