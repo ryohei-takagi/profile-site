@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <Wrap>
       <Text>
-        &copy; 2023 ryohei-takagi
+        Copyright &copy; ryohei-takagi. All rights reserved.
       </Text>
     </Wrap>
   )
