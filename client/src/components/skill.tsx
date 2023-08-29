@@ -7,10 +7,7 @@ import Datadog from '../images/icons/datadog.png'
 import Terraform from '../images/icons/terraform.png'
 import GoIcon from '../images/icons/go.png'
 import Typescript from '../images/icons/typescript.png'
-import ReactIcon from '../images/icons/react.png'
-import Deno from '../images/icons/deno.png'
 import PHP from '../images/icons/php.png'
-import Laravel from '../images/icons/laravel.png'
 import Scala from '../images/icons/scala.png'
 import {useEffect, useState} from 'react'
 
@@ -151,59 +148,47 @@ const A = styled.a`
 `
 
 const sections = [
-  { "image": Fargate, "name": "AWS", "rating": 5, "body":
+  { "image": Fargate, "name": "Cloud Architecting", "rating": 5, "body":
     <BodySection>
-      <Sentence>Solution Architect Professional & DevOps Engineer Professional</Sentence>
+      <Sentence>AWS Solution Architect Professional & DevOps Engineer Professional</Sentence>
       <Sentence>コンテナオーケストレーション、CI/CD、DataLake、ETL・分析基盤</Sentence>
-      <Sentence>サーバーレス主体のソリューションを提案</Sentence>
+      <Sentence>サーバーレスソリューションの提案</Sentence>
     </BodySection>
   },
-  { "image": Datadog, "name": "Datadog (SaaS系全般)", "rating": 5, "body":
+  { "image": Datadog, "name": "Observability Tool", "rating": 5, "body":
     <BodySection>
-      <Sentence>SaaS系オブザーバビリティツールを活用したSREの推進</Sentence>
-      <Sentence>サービスレベル目標(SLO)の提案</Sentence>
+      <Sentence>Datadog等SaaS系オブザーバビリティツールを活用したSREの推進</Sentence>
+      <Sentence>SLOの提案</Sentence>
     </BodySection>
   },
-  { "image": Terraform, "name": "Terraform", "rating": 5, "body":
+  { "image": Terraform, "name": "IaC", "rating": 5, "body":
     <BodySection>
-      <Sentence>IaC(Infrastructure as Code)の推進</Sentence>
+      <Sentence>Terraform等IaC(Infrastructure as Code)の推進</Sentence>
       <Sentence>クラウド・SaaSリソースのコード化</Sentence>
     </BodySection>
   },
   { "image": GoIcon, "name": "Go", "rating": 5, "body":
     <BodySection>
       <Sentence>Webサービスやバッチ、CLI等の設計および実装</Sentence>
-      <Sentence>gRPCを活用したサービス間の連携、並行処理等</Sentence>
+      <Sentence>gRPC、Gin、Echo</Sentence>
     </BodySection>
   },
   { "image": Typescript, "name": "Typescript", "rating": 5, "body":
     <BodySection>
       <Sentence>Webサービスやバッチ、CLI等の設計および実装</Sentence>
-      <Sentence>React、Vue.js等を活用したフロントエンドの設計</Sentence>
-    </BodySection>
-  },
-  { "image": Deno, "name": "Deno", "rating": 3, "body":
-      <BodySection>
-        <Sentence>Webサービスやバッチ、CLI等の設計および実装</Sentence>
-        <Sentence>Fresh</Sentence>
-      </BodySection>
-  },
-  { "image": ReactIcon, "name": "React", "rating": 4, "body":
-    <BodySection>
-      <Sentence>React Hooksを活用したコンポーネント設計</Sentence>
-      <Sentence>Next.js</Sentence>
+      <Sentence>Next.js、React、Vue、Deno、Fresh</Sentence>
     </BodySection>
   },
   { "image": PHP, "name": "PHP", "rating": 5, "body":
     <BodySection>
       <Sentence>Webサービスやバッチ、CLI等の設計および実装</Sentence>
-      <Sentence>Laravel、Ethna、ZendFramework2、CakePHP2</Sentence>
+      <Sentence>Laravel、Ethna、ZendFramework、CakePHP</Sentence>
     </BodySection>
   },
   { "image": Scala, "name": "Scala", "rating": 4, "body":
     <BodySection>
       <Sentence>Webサービスやバッチ、CLI等の設計および実装</Sentence>
-      <Sentence>PlayFramework2</Sentence>
+      <Sentence>PlayFramework</Sentence>
     </BodySection>
   },
 ]

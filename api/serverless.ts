@@ -4,13 +4,13 @@ import contact from '@functions/contact';
 
 const serverlessConfiguration: AWS = {
   service: 'ryohei-takagi-me-api',
-  frameworkVersion: '2',
+  frameworkVersion: '3',
   variablesResolutionMode: '20210326',
   plugins: ['serverless-esbuild'],
   provider: {
     name: 'aws',
     region: 'ap-northeast-1',
-    runtime: 'nodejs14.x',
+    runtime: 'nodejs18.x',
     timeout: 10,
     apiGateway: {
       minimumCompressionSize: 1024,
@@ -32,7 +32,7 @@ const serverlessConfiguration: AWS = {
       minify: false,
       sourcemap: true,
       exclude: ['aws-sdk'],
-      target: 'node14',
+      target: 'node18',
       define: { 'require.resolve': undefined },
       platform: 'node',
       concurrency: 10,
